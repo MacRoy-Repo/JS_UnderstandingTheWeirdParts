@@ -2,7 +2,8 @@
 
 #### Concepts
 ##### Global Enviroment/Global Object
-	In the execution context(Global/ Base) of your code one Global Object and "this" variable is created by JS engine. 
+	In the execution context(Global/ Base) of your code one Global Object and "this" variable 
+	is created by JS engine. 
 	
 
 
