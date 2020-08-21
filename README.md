@@ -11,14 +11,16 @@
 			- Outer Enviroment : In case of function how code communicates with global Object
 			- Then Our piece of code.
 	Note : Anything we write in code a variable/ function while execution gets stored in the key/ value fashion in global object. So in case of browser the varaible and function could be accessed using
-	 
-	``` window.a;
-		"Hello World"
-		window.b;
-		f(){
-		} ```
-	
 
+``` 
+	window.a;
+	"Hello World"
+	
+	window.b;
+	f(){
+
+	} 
+```
 
 #### Aside
 ##### Conceptual Aside
