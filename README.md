@@ -1,22 +1,23 @@
 # JS_UnderstandingTheWeirdParts
 
-#### Conceptual Aside
-##### Syntax Parser 
+##### Nomenclature
+	A : Aside | CA: Conceptual Aside | CO: Concepts | []: Reference Dir.
+
+##### CA: Syntax Parser 
     A program that reads your code and determines what it does and if its grammar is valid.
-##### Lexical Environment 
+##### CA: Lexical Environment 
     Where something sits physically in the code. A lexical Environment exists in the programming 
     languages in which where you write something is important. Where its written and where it is 
     surrounded.
-##### Execution Context 
+##### CA: Execution Context 
     A wrapper that helps manage the code that is running.
-##### Name/ Value Pair
+##### CA: Name/ Value Pair
 	Then name can be defined more than once, but can only have one value in a given execution 
 	context.
-##### Objects
+##### CA: Objects
 	A collection of name/ value pairs where each value can also be a collection of name/value
 
-#### Concepts
-##### Global Environment/Global Object
+##### CO: Global Environment/Global Object [GlobalEnvironmentObject]
 	In the execution context(Global/ Base) of your code one Global Object and "this" variable 
 	is created by JS engine. 
 	In JS GLOBAL "Not inside a function"
@@ -36,7 +37,7 @@
 	window.b;
 	f(){
 	} 
-##### The Execution Context - Creation and Hoisting
+##### CO: The Execution Context - Creation and Hoisting [Hoisting]
 	During creation of Execution Context JS engine along with Global Object, 'this' and Outer Env. 
 	sets up a Memory space where it stores all the variables and function(intact)[Hoisting] that are 
 	going to be used in processing the code.
@@ -54,7 +55,7 @@
 	function b() {
 	    console.log("Inside b!");
 	}
-##### 'undefined'
+##### CA: 'undefined' [undefined]
 	During Hoisting Phase of Context Creation : (Variable and function setup)
 	When the parser in JS engine encounters a variable that is been defined it stores the variable 
 	with undefined (Special keyword/value and uses space like any other value) in the memory to be 
@@ -69,11 +70,11 @@
 	if(a === undefined){
 		console.log('a is undefined!');
 	}
-##### The Execution Context - Code Execution
+##### CO: The Execution Context - Code Execution [Execution]
 	After creation part of Execution Context Global Object, 'this' , Outer Env. and Memory space
 	setup the code is executed line by line sequentially
 	As seen in the console output:
-		
+
 	app.js:2 Called b!
 	app.js:6 undefined
 	app.js:9 Hello World!
