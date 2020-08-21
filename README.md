@@ -40,7 +40,7 @@
 	During creation of Execution Context JS engine along with Global Object, 'this' and Outer Env. 
 	sets up a Memory space where it stores all the variables and function(intact)[Hoisting] that are 
 	going to be used in processing the code.
-		- Memory space helps to invoke a function even before it defined in the lexical environment
+		- Memory space helps to invoke a function even before it defined in the lexical env.
 		- Any variable defined in the code will have to be initially placeholder(set) as  
 		  'undefined' to be stored in the memory space.
 	Note : The code is not physically moved to the top to invoke this feature called Hoisting rather
