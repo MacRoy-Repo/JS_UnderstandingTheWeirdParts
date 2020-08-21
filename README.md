@@ -69,3 +69,11 @@
 	if(a === undefined){
 		console.log('a is undefined!');
 	}
+##### The Execution Context - Code Execution
+	After creation part of Execution Context Global Object, 'this' , Outer Env. and Memory space
+	setup the code is executed line by line sequentially
+	As seen in the console output:
+		
+	app.js:2 Called b!
+	app.js:6 undefined
+	app.js:9 Hello World!
